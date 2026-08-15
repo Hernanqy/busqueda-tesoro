@@ -1,10 +1,6 @@
-﻿import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-type Screen =
-  | "inicio"
-  | "desafio"
-  | "pista"
-  | "final";
+type Screen = "inicio" | "desafio" | "pista" | "final";
 
 interface Desafio {
   numero: number;
@@ -22,56 +18,60 @@ const desafios: Desafio[] = [
     numero: 1,
     titulo: "ADIVINANZA",
     pregunta:
-      "Son pequeñas y duras, en el suelo descansan, algunas son de río, otras las encuentras en la casa. ¿Qué son?",
+      "Son pequeñas y duras, en el suelo descansan. Algunas son de río, otras las encontrás en la casa. ¿Qué son?",
     imagen: "/assets/images/desafio-1.png",
     audioDesafio: "/assets/audio/desafio-1.mp3",
     audioPista: "/assets/audio/pista-1.mp3",
     pista: "FIJATE ATRÁS DEL SILLÓN",
     lugar: "COMEDOR",
   },
+
   {
     numero: 2,
     titulo: "ADIVINANZA",
     pregunta:
-      "Suave y blanda soy, te acompaño al dormir, en mí descansas la cabeza para poder soñar y vivir. ¿Qué soy?",
+      "Suave y blanda soy, te acompaño al dormir. En mí descansás la cabeza para poder soñar y vivir. ¿Qué soy?",
     imagen: "/assets/images/desafio-2.png",
     audioDesafio: "/assets/audio/desafio-2.mp3",
     audioPista: "/assets/audio/pista-2.mp3",
     pista: "FIJATE EN LA ROPA COLGADA DE PAPÁ",
     lugar: "HABITACIÓN DE MAMÁ Y PAPÁ",
   },
+
   {
     numero: 3,
     titulo: "ADIVINANZA",
     pregunta:
-      "Blancos o marrones, en la cocina me usan, me rompen, me baten, me cocinan y me disfrutan. ¿Qué soy?",
+      "Blancos o marrones, en la cocina me usan. Me rompen, me baten, me cocinan y me disfrutan. ¿Qué soy?",
     imagen: "/assets/images/desafio-3.png",
     audioDesafio: "/assets/audio/desafio-3.mp3",
     audioPista: "/assets/audio/pista-3.mp3",
     pista: "FIJATE DONDE ESTÁN LAS OLLAS",
     lugar: "COCINA",
   },
+
   {
     numero: 4,
     titulo: "ADIVINANZA",
     pregunta:
-      "En un tablero soy rey, de estrategia y mente, blancas y negras me mueven para ganar inteligentemente. ¿Qué soy?",
+      "En un tablero soy rey, de estrategia y mente. Blancas y negras me mueven para ganar inteligentemente. ¿Qué soy?",
     imagen: "/assets/images/desafio-4.png",
     audioDesafio: "/assets/audio/desafio-4.mp3",
     audioPista: "/assets/audio/pista-4.mp3",
     pista: "FIJATE ARRIBA DEL LAVARROPAS",
     lugar: "ESTUDIO",
   },
+
   {
     numero: 5,
     titulo: "ADIVINANZA",
     pregunta:
-      "Bailo, canto y deslumbro, el Rey del Pop me llaman, con mis pasos y mi música, a todos los inspiro y encanto. ¿Quién soy?",
+      "Bailo, canto y deslumbro. El Rey del Pop me llaman. Con mis pasos y mi música, a todos los inspiro y encanto. ¿Quién soy?",
     imagen: "/assets/images/desafio-5.png",
     audioDesafio: "/assets/audio/desafio-5.mp3",
     audioPista: "/assets/audio/pista-5.mp3",
     pista: "FIJATE DEBAJO DE TU CAMA",
-    lugar: "PIEZA DE BENJA",
+    lugar: "HABITACIÓN DE BENJA",
   },
 ];
 
@@ -84,8 +84,6 @@ function App() {
   const desafio = desafios[desafioActual];
 
   const reproducirAudio = (src: string) => {
-    if (!src) return;
-
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
@@ -151,9 +149,12 @@ function App() {
           <div className="decoracion decoracion-der">🗺️</div>
 
           <div className="inicio-contenido">
+
             <div className="brujula">🧭</div>
 
-            <p className="pequeno">UNA GRAN AVENTURA ESTÁ POR COMENZAR</p>
+            <p className="pequeno">
+              UNA GRAN AVENTURA ESTÁ POR COMENZAR
+            </p>
 
             <h1>
               BÚSQUEDA
@@ -161,8 +162,8 @@ function App() {
             </h1>
 
             <p className="descripcion">
-              Resuelve las adivinanzas, encuentra las pistas
-              y descubre dónde se esconde el tesoro.
+              Resolvé las adivinanzas, encontrá las pistas
+              y descubrí dónde se esconde el tesoro.
             </p>
 
             <button
@@ -171,6 +172,7 @@ function App() {
             >
               INICIAR LA BÚSQUEDA
             </button>
+
           </div>
 
         </section>
@@ -180,42 +182,44 @@ function App() {
         <section className="pantalla desafio">
 
           <header className="cabecera">
+
             <div className="numero">
               {desafio.numero}
             </div>
 
             <div>
               <div className="etiqueta">
-                DESAFÍO {desafio.numero} DE 5
+                DESAFÍO {desafio.numero} DE {desafios.length}
               </div>
 
               <h1>{desafio.titulo}</h1>
             </div>
+
           </header>
 
           <div className="contenido-desafio">
 
             <div className="imagen-contenedor">
+
               <img
                 src={desafio.imagen}
                 alt={`Desafío ${desafio.numero}`}
-                onError={(e) => {
-                  e.currentTarget.src =
-                    "/assets/images/desafio-generico.png";
-                }}
               />
+
             </div>
 
             <div className="adivinanza">
 
-              <div className="icono-pregunta">?</div>
+              <div className="icono-pregunta">
+                ?
+              </div>
 
               <p>
                 {desafio.pregunta}
               </p>
 
               <div className="zona">
-                RESUELVE LA ADIVINANZA
+                RESOLVÉ LA ADIVINANZA
               </div>
 
               <button
@@ -230,6 +234,7 @@ function App() {
           </div>
 
           <div className="progreso">
+
             {desafios.map((item, index) => (
               <div
                 key={item.numero}
@@ -240,6 +245,7 @@ function App() {
                 }
               />
             ))}
+
           </div>
 
         </section>
@@ -265,7 +271,9 @@ function App() {
 
             <div className="pista-tarjeta">
 
-              <div className="lupa">🔎</div>
+              <div className="lupa">
+                🔎
+              </div>
 
               <p>
                 {desafio.pista}
@@ -315,7 +323,7 @@ function App() {
             </h1>
 
             <p className="final-mensaje">
-              Completaste las 6 pistas.
+              Completaste las 5 pistas.
               <br />
               ¡Felicitaciones, gran explorador!
             </p>
@@ -344,5 +352,3 @@ function App() {
 }
 
 export default App;
-
-
