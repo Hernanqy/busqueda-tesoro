@@ -23,7 +23,7 @@ const desafios: Desafio[] = [
     titulo: "ADIVINANZA",
     pregunta:
       "Son pequeñas y duras, en el suelo descansan, algunas son de río, otras las encuentras en la casa. ¿Qué son?",
-    imagen: "/assets/images/desafio-1.jpg",
+    imagen: "/assets/images/desafio-1.png",
     audioDesafio: "/assets/audio/desafio-1.mp3",
     audioPista: "/assets/audio/pista-1.mp3",
     pista: "FIJATE ATRÁS DEL SILLÓN",
@@ -34,7 +34,7 @@ const desafios: Desafio[] = [
     titulo: "ADIVINANZA",
     pregunta:
       "Suave y blanda soy, te acompaño al dormir, en mí descansas la cabeza para poder soñar y vivir. ¿Qué soy?",
-    imagen: "/assets/images/desafio-2.jpg",
+    imagen: "/assets/images/desafio-2.png",
     audioDesafio: "/assets/audio/desafio-2.mp3",
     audioPista: "/assets/audio/pista-2.mp3",
     pista: "FIJATE EN LA ROPA COLGADA DE PAPÁ",
@@ -45,7 +45,7 @@ const desafios: Desafio[] = [
     titulo: "ADIVINANZA",
     pregunta:
       "Blancos o marrones, en la cocina me usan, me rompen, me baten, me cocinan y me disfrutan. ¿Qué soy?",
-    imagen: "/assets/images/desafio-3.jpg",
+    imagen: "/assets/images/desafio-3.png",
     audioDesafio: "/assets/audio/desafio-3.mp3",
     audioPista: "/assets/audio/pista-3.mp3",
     pista: "FIJATE DONDE ESTÁN LAS OLLAS",
@@ -56,7 +56,7 @@ const desafios: Desafio[] = [
     titulo: "ADIVINANZA",
     pregunta:
       "Después de la ducha o de un buen baño, me usas para secarte y quedar en tu mejor estado. ¿Qué soy?",
-    imagen: "/assets/images/desafio-4.jpg",
+    imagen: "/assets/images/desafio-4.png",
     audioDesafio: "/assets/audio/desafio-4.mp3",
     audioPista: "/assets/audio/pista-4.mp3",
     pista: "FIJATE ATRÁS DE LA ESTUFA ELÉCTRICA",
@@ -67,7 +67,7 @@ const desafios: Desafio[] = [
     titulo: "ADIVINANZA",
     pregunta:
       "En un tablero soy rey, de estrategia y mente, blancas y negras me mueven para ganar inteligentemente. ¿Qué soy?",
-    imagen: "/assets/images/desafio-5.jpg",
+    imagen: "/assets/images/desafio-5.png",
     audioDesafio: "/assets/audio/desafio-5.mp3",
     audioPista: "/assets/audio/pista-5.mp3",
     pista: "FIJATE ARRIBA DEL LAVARROPAS",
@@ -78,7 +78,7 @@ const desafios: Desafio[] = [
     titulo: "ADIVINANZA",
     pregunta:
       "Bailo, canto y deslumbro, el Rey del Pop me llaman, con mis pasos y mi música, a todos los inspiro y encanto. ¿Quién soy?",
-    imagen: "/assets/images/desafio-6.jpg",
+    imagen: "/assets/images/desafio-6.png",
     audioDesafio: "/assets/audio/desafio-6.mp3",
     audioPista: "/assets/audio/pista-6.mp3",
     pista: "FIJATE DEBAJO DE TU CAMA",
@@ -212,7 +212,7 @@ function App() {
                 alt={`Desafío ${desafio.numero}`}
                 onError={(e) => {
                   e.currentTarget.src =
-                    "/assets/images/desafio-generico.jpg";
+                    "/assets/images/desafio-generico.png";
                 }}
               />
             </div>
@@ -355,3 +355,4 @@ function App() {
 }
 
 export default App;
+
