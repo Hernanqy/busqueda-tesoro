@@ -25,6 +25,7 @@ const desafios: Desafio[] = [
     pista: "FIJATE ATRÁS DEL SILLÓN",
     lugar: "COMEDOR",
   },
+
   {
     numero: 2,
     titulo: "ADIVINANZA",
@@ -36,6 +37,7 @@ const desafios: Desafio[] = [
     pista: "FIJATE EN LA ROPA COLGADA DE PAPÁ",
     lugar: "HABITACIÓN DE MAMÁ Y PAPÁ",
   },
+
   {
     numero: 3,
     titulo: "ADIVINANZA",
@@ -47,19 +49,9 @@ const desafios: Desafio[] = [
     pista: "FIJATE DONDE ESTÁN LAS OLLAS",
     lugar: "COCINA",
   },
+
   {
     numero: 4,
-    titulo: "ADIVINANZA",
-    pregunta:
-      "Después de la ducha o de un buen baño, me usás para secarte y quedar en tu mejor estado. ¿Qué soy?",
-    imagen: "/assets/images/desafio-4.png",
-    audioDesafio: "/assets/audio/desafio-4.mp3",
-    audioPista: "/assets/audio/pista-4.mp3",
-    pista: "FIJATE ATRÁS DE LA ESTUFA ELÉCTRICA",
-    lugar: "BAÑO",
-  },
-  {
-    numero: 5,
     titulo: "ADIVINANZA",
     pregunta:
       "En un tablero soy rey, de estrategia y mente. Blancas y negras me mueven para ganar inteligentemente. ¿Qué soy?",
@@ -69,8 +61,9 @@ const desafios: Desafio[] = [
     pista: "FIJATE ARRIBA DEL LAVARROPAS",
     lugar: "ESTUDIO",
   },
+
   {
-    numero: 6,
+    numero: 5,
     titulo: "ADIVINANZA",
     pregunta:
       "Bailo, canto y deslumbro. El Rey del Pop me llaman. Con mis pasos y mi música, a todos los inspiro y encanto. ¿Quién soy?",
@@ -330,7 +323,7 @@ function App() {
             </h1>
 
             <p className="final-mensaje">
-              Completaste las 6 pistas.
+              Completaste las 5 pistas.
               <br />
               ¡Felicitaciones, gran explorador!
             </p>
