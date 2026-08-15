@@ -55,32 +55,21 @@ const desafios: Desafio[] = [
     numero: 4,
     titulo: "ADIVINANZA",
     pregunta:
-      "Después de la ducha o de un buen baño, me usas para secarte y quedar en tu mejor estado. ¿Qué soy?",
+      "En un tablero soy rey, de estrategia y mente, blancas y negras me mueven para ganar inteligentemente. ¿Qué soy?",
     imagen: "/assets/images/desafio-4.png",
     audioDesafio: "/assets/audio/desafio-4.mp3",
     audioPista: "/assets/audio/pista-4.mp3",
-    pista: "FIJATE ATRÁS DE LA ESTUFA ELÉCTRICA",
-    lugar: "BAÑO",
+    pista: "FIJATE ARRIBA DEL LAVARROPAS",
+    lugar: "ESTUDIO",
   },
   {
     numero: 5,
     titulo: "ADIVINANZA",
     pregunta:
-      "En un tablero soy rey, de estrategia y mente, blancas y negras me mueven para ganar inteligentemente. ¿Qué soy?",
+      "Bailo, canto y deslumbro, el Rey del Pop me llaman, con mis pasos y mi música, a todos los inspiro y encanto. ¿Quién soy?",
     imagen: "/assets/images/desafio-5.png",
     audioDesafio: "/assets/audio/desafio-5.mp3",
     audioPista: "/assets/audio/pista-5.mp3",
-    pista: "FIJATE ARRIBA DEL LAVARROPAS",
-    lugar: "ESTUDIO",
-  },
-  {
-    numero: 6,
-    titulo: "ADIVINANZA",
-    pregunta:
-      "Bailo, canto y deslumbro, el Rey del Pop me llaman, con mis pasos y mi música, a todos los inspiro y encanto. ¿Quién soy?",
-    imagen: "/assets/images/desafio-6.png",
-    audioDesafio: "/assets/audio/desafio-6.mp3",
-    audioPista: "/assets/audio/pista-6.mp3",
     pista: "FIJATE DEBAJO DE TU CAMA",
     lugar: "PIEZA DE BENJA",
   },
@@ -197,7 +186,7 @@ function App() {
 
             <div>
               <div className="etiqueta">
-                DESAFÍO {desafio.numero} DE 6
+                DESAFÍO {desafio.numero} DE 5
               </div>
 
               <h1>{desafio.titulo}</h1>
@@ -355,4 +344,5 @@ function App() {
 }
 
 export default App;
+
 
