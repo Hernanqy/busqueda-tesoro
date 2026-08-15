@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
 
 type Screen = "inicio" | "desafio" | "pista" | "final";
 
@@ -25,7 +25,6 @@ const desafios: Desafio[] = [
     pista: "FIJATE ATRÁS DEL SILLÓN",
     lugar: "COMEDOR",
   },
-
   {
     numero: 2,
     titulo: "ADIVINANZA",
@@ -37,7 +36,6 @@ const desafios: Desafio[] = [
     pista: "FIJATE EN LA ROPA COLGADA DE PAPÁ",
     lugar: "HABITACIÓN DE MAMÁ Y PAPÁ",
   },
-
   {
     numero: 3,
     titulo: "ADIVINANZA",
@@ -49,27 +47,36 @@ const desafios: Desafio[] = [
     pista: "FIJATE DONDE ESTÁN LAS OLLAS",
     lugar: "COCINA",
   },
-
   {
     numero: 4,
     titulo: "ADIVINANZA",
     pregunta:
-      "En un tablero soy rey, de estrategia y mente. Blancas y negras me mueven para ganar inteligentemente. ¿Qué soy?",
+      "Después de la ducha o de un buen baño, me usás para secarte y quedar en tu mejor estado. ¿Qué soy?",
     imagen: "/assets/images/desafio-4.png",
     audioDesafio: "/assets/audio/desafio-4.mp3",
     audioPista: "/assets/audio/pista-4.mp3",
-    pista: "FIJATE ARRIBA DEL LAVARROPAS",
-    lugar: "ESTUDIO",
+    pista: "FIJATE ATRÁS DE LA ESTUFA ELÉCTRICA",
+    lugar: "BAÑO",
   },
-
   {
     numero: 5,
     titulo: "ADIVINANZA",
     pregunta:
-      "Bailo, canto y deslumbro. El Rey del Pop me llaman. Con mis pasos y mi música, a todos los inspiro y encanto. ¿Quién soy?",
+      "En un tablero soy rey, de estrategia y mente. Blancas y negras me mueven para ganar inteligentemente. ¿Qué soy?",
     imagen: "/assets/images/desafio-5.png",
     audioDesafio: "/assets/audio/desafio-5.mp3",
     audioPista: "/assets/audio/pista-5.mp3",
+    pista: "FIJATE ARRIBA DEL LAVARROPAS",
+    lugar: "ESTUDIO",
+  },
+  {
+    numero: 6,
+    titulo: "ADIVINANZA",
+    pregunta:
+      "Bailo, canto y deslumbro. El Rey del Pop me llaman. Con mis pasos y mi música, a todos los inspiro y encanto. ¿Quién soy?",
+    imagen: "/assets/images/desafio-6.png",
+    audioDesafio: "/assets/audio/desafio-6.mp3",
+    audioPista: "/assets/audio/pista-6.mp3",
     pista: "FIJATE DEBAJO DE TU CAMA",
     lugar: "HABITACIÓN DE BENJA",
   },
@@ -323,7 +330,7 @@ function App() {
             </h1>
 
             <p className="final-mensaje">
-              Completaste las 5 pistas.
+              Completaste las 6 pistas.
               <br />
               ¡Felicitaciones, gran explorador!
             </p>
